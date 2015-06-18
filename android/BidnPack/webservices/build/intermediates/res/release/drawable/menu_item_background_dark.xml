@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/menu_item_pressed_dark" android:state_pressed="true" />
+    <item android:drawable="@color/menu_item_focused_dark" android:state_focused="true" />
+    <item android:drawable="@color/menu_item_default" />
+</selector><!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/cobalt/src/main/res/drawable/menu_item_background_dark.xml --><!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/webservices/build/intermediates/exploded-aar/BidnPack/cobalt/unspecified/res/drawable/menu_item_background_dark.xml -->

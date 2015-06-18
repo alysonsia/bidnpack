@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:interpolator="@android:anim/decelerate_interpolator"
+     android:zAdjustment="top">
+
+    <translate android:duration="@android:integer/config_mediumAnimTime"
+               android:fromYDelta="100%p"
+               android:toYDelta="0%p" />
+
+</set><!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/cobalt/src/main/res/anim/modal_open_enter.xml --><!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/cobalt/build/intermediates/bundles/debug/res/anim/modal_open_enter.xml -->

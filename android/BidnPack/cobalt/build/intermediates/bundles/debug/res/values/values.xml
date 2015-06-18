@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/cobalt/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="menu_item_default">#00000000</color>
+    <color name="menu_item_focused_dark">#4CFFFFFF</color>
+    <color name="menu_item_focused_light">#4C000000</color>
+    <color name="menu_item_pressed_dark">#4CFFFFFF</color>
+    <color name="menu_item_pressed_light">#4C000000</color>
+    <!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/cobalt/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="bottom_actionBar_button_padding">8dp</dimen>
+    <dimen name="bottom_actionbar_button_size">48dp</dimen>
+    <!-- From: file:/C:/myStudy/goji/mobileapps/bidnpack/android/BidnPack/cobalt/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="version_name">0.3</string>
+</resources>

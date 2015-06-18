@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="PlaceGallery">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<link rel="stylesheet" href="PlaceGalleryStyle.css"/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!--script type="text/javascript" src="http://code.angularjs.org/1.2.0rc1/angular.js"></script>
+	<script type="text/javascript" src="http://code.angularjs.org/1.2.0rc1/angular-animate.min.js"></script>
+	<script type="text/javascript" src="http://code.angularjs.org/1.2.0rc1/angular-touch.min.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular-touch.min.js"></script>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body ng-controller="MainCtrl">
+	<div ng-controller="Carousel1Ctrl">
+		<div >
+			<carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+					<img ng-src="{{slide.image}}" style="margin:auto;">
+					<div class="carousel-caption">
+						<h4>{{slide.place}}</h4>
+						<p>{{slide.text}}</p>
+					</div>
+				</slide>
+			</carousel>
+		</div>
+	</div>
+	<div ng-controller="Carousel2Ctrl">
+		<div>
+			<carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+					<img ng-src="{{slide.image}}" style="margin:auto;">
+					<div class="carousel-caption">
+						<h4>{{slide.place}}</h4>
+						<p>{{slide.text}}</p>
+					</div>
+				</slide>
+			</carousel>
+		</div>
+	</div>
+	<div ng-controller="Carousel3Ctrl">
+		<div>
+			<carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+					<img ng-src="{{slide.image}}" style="margin:auto;">
+					<div class="carousel-caption">
+						<h4>{{slide.place}}</h4>
+						<p>{{slide.text}}</p>
+					</div>
+				</slide>
+			</carousel>
+		</div>
+	</div>
+	<div ng-controller="Carousel4Ctrl">
+		<div>
+			<carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+					<img ng-src="{{slide.image}}" style="margin:auto;">
+					<div class="carousel-caption">
+						<h4>{{slide.place}}</h4>
+						<p>{{slide.text}}</p>
+					</div>
+				</slide>
+			</carousel>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="../common/angular/ui-bootstrap-tpls-0.13.0.min.js"></script>
+	<script type="text/javascript" src="../common/cobalt/cobalt.js"></script>
+	<script type="text/javascript" src="../common/app.js"></script>
+	<script type="text/javascript" src="PlaceGalleryLogic.js"></script>
+<script>
+			cobalt.init({
+				debug:true,
+				//debugInBrowser:true,
+				events:{
+					"pullToRefresh" : function(data,callback){
+						cobalt.log('Refresh asked...');
+						pleaseRefresh(callback);
+					}
+				}
+			});
+			function pleaseRefresh( callback ){
+				cobalt.log('refreshing content')
+
+				if (callback){
+					cobalt.sendCallback(callback)
+				}
+			}
+		</script>
+</body>
+</html>

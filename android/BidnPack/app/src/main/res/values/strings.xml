@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BidnPack</string>
+    <string name="place_ph">Philippines</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bidnow_settings">Bid Now</string>
+    <string name="owner_settings">Switch to Owner</string>
+</resources>
